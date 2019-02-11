@@ -1,0 +1,264 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "chartjs/chartjs",
+                "version": "v2.7.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "chartjs"
+                },
+                "dist": {
+                    "url": "https://www.chartjs.org/dist/2.7.2/Chart.bundle.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "d3/d3",
+                "version": "v3.5.17",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "components/highlightjs",
+                "version": "9.7.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/highcharts",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/highcharts.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/more",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_more"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/highcharts-more.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/exporting",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_exporting"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/modules/exporting.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/export-data",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_export-data"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/modules/export-data.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "highcharts/accessibility",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_accessibility"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+                "package": {
+                "name": "highcharts/3d",
+                "version": "6.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_3d"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "chartjs/chartjs": "2.7.2",
+        "components/highlightjs": "9.7.*",
+        "composer/installers": "^1.6",
+        "cweagans/composer-patches": "^1.6.5",
+        "d3/d3": "3.5.*",
+        "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/address": "~1.0",
+        "drupal/admin_toolbar": "^1.26",
+        "drupal/autologout": "^1.0",
+        "drupal/backup_migrate": "^4.0",
+        "drupal/bulk_user_registration": "^1.1@alpha",
+        "drupal/charts": "^3.0@beta",
+        "drupal/colorbox": "^1.4",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "^8.6.0",
+        "drupal/crop": "^1.5",
+        "drupal/ctools": "^3.1",
+        "drupal/devel": "^2.0",
+        "drupal/device_geolocation": "^3.6",
+        "drupal/ds": "^3.2",
+        "drupal/feeds": "^3.0@alpha",
+        "drupal/field_group": "^1.0",
+        "drupal/file_mdm": "^1.1",
+        "drupal/geocoder": "^2.1",
+        "drupal/geofield": "^1.1",
+        "drupal/geofield_map": "^2.30",
+        "drupal/geolocation": "^1.11",
+        "drupal/geophp": "^1.0@beta",
+        "drupal/linkit": "^4.3",
+        "drupal/pathauto": "^1.3",
+        "drupal/rules": "^3.0@alpha",
+        "drupal/search_api": "^1.11",
+        "drupal/token": "^1.5",
+        "drupal/views_data_export": "^1.0@beta",
+        "drush/drush": "^9.0.0",
+        "highcharts/3d": "6.1.0",
+        "highcharts/accessibility": "6.1.0",
+        "highcharts/export-data": "6.1.0",
+        "highcharts/exporting": "6.1.0",
+        "highcharts/highcharts": "6.1.0",
+        "highcharts/more": "6.1.0",
+        "vlucas/phpdotenv": "^2.4",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
+    },
+    "require-dev": {
+        "webflo/drupal-core-require-dev": "^8.6.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/{$name}": ["type:drupal-drush"]
+        },
+        "drupal-scaffold": {
+            "initial": {
+                ".editorconfig": "../.editorconfig",
+                ".gitattributes": "../.gitattributes"
+            }
+        }
+    }
+}
